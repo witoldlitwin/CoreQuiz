@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CoreQuiz.Models
 {
@@ -13,5 +14,6 @@ namespace CoreQuiz.Models
         public ApplicationUser CreatedBy { get; set; }
         public ApplicationUser ModifiedBy { get; set; }
         public QuestionType Type { get; set; }
+        public ICollection<Answer> Answers { get; set; }
     }
 }
